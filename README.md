@@ -26,7 +26,7 @@ npm run dev
 ## login info
 You van either log in with your email & password or use the credentials i have provided
 
- email: testjohndoe@gmail.com,
+ email: testjohndoe@gmail.com <br/>
  Password: qwerty
 
 

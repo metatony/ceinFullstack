@@ -37,7 +37,7 @@ function About() {
         <div className="sm:w-1/2 sm:m-5 sm:flex sm:justify-center">
           <img
             className="sm:h-80 sm:w-[400px] w-full"
-            src="src/assets/about1.jpg"
+            src="https://ceinbucket.s3.eu-north-1.amazonaws.com/about1.jpg"
             alt="hero background"
           />
         </div>
