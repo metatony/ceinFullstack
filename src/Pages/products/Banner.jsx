@@ -6,7 +6,7 @@ function Banner() {
       <section>
         {/* <!-- product hero --> */}
 
-        <div className="productBanner hidden px-5 py-10 text-white w-full sm:flex items-center sm:px-20 lg:px-36">
+        <div className="productBanner hidden px-5 bg-[#3a3a3a] py-10 text-white w-full sm:flex items-center sm:px-20 lg:px-36">
           <div className="flex-col w-[400px] text-left space-y-5">
             <p className="text-3xl leading-snug">Skin Care</p>
             <p className="font-extralight text-sm leading-8">
@@ -34,7 +34,7 @@ function Banner() {
           <div className="">
             <img
               className="w-full"
-              src="/assets/producthero.jpg"
+              src="/assets/producthero.png"
               alt="product hero"
             />
           </div>
