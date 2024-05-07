@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { auth } from "../../../Config/Config";
 import { useNavigate } from "react-router-dom";
 
-import {  createUserWithEmailAndPassword  } from 'firebase/auth';
+import { createUserWithEmailAndPassword } from "firebase/auth";
 
 function Form() {
   const navigate = useNavigate();
@@ -17,59 +17,26 @@ function Form() {
   const [errorMessage, setErrorMessage] = useState("");
 
   const handleSubmit = async (e) => {
-    e.preventDefault()
-   
+    e.preventDefault();
+
     await createUserWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {
-          // Signed in
-          const user = userCredential.user;
-          console.log(user);
-          navigate("/login")
-          // ...
-          alert('SignUp successful, please login !');
+        // Signed in
+        const user = userCredential.user;
+        console.log(user);
+        navigate("/login");
+        // ...
+        alert("SignUp successful, please login !");
       })
       .catch((error) => {
-          const errorCode = error.code;
-          //const errorMessage = error.message;
-          setErrorMessage(error.message)
-          console.log(errorCode, errorMessage);
-          // ..
+        const errorCode = error.code;
+        //const errorMessage = error.message;
+        setErrorMessage(error.message);
+        console.log(errorCode, errorMessage);
+        // ..
       });
+  };
 
-    }
-    
-  // const handleSubmit = (e) => {
-  //   e.preventDefault();
-  //   console.log(fullName, email, password);
-    
-  //   auth
-  //     .createUserWithEmailAndPassword(auth, email, password)
-  //     .then((credentials) => {
-  //       console.log(credentials);
-  //       fs.collection("users")
-  //         .doc(credentials.user.uid)
-  //         .set({ 
-  //           FullName: fullName,
-  //           Email: email,
-  //           Password: password,
-  //         })
-  //         .then(() => {
-  //           setSuccessMessage("SignUp Successful");
-  //           setFullName("");
-  //           setEmail("");
-  //           setPassword("");
-  //           setErrorMessage("");
-  //           setTimeout(() => {
-  //             setSuccessMessage("");
-  //             navigate("Login");
-  //           }, 3000);
-  //         })
-  //         .catch((error) => setErrorMessage(error.message));
-  //     })
-  //     .catch((error) => {
-  //       setErrorMessage(error.message);
-  //     });
-  // };
   return (
     <form
       onSubmit={handleSubmit}
@@ -149,13 +116,14 @@ function Form() {
 
       {errorMessage && (
         <>
-          <div className="text-center text-orange-600 text-xs">{errorMessage}</div>
+          <div className="text-center text-orange-600 text-xs">
+            {errorMessage}
+          </div>
           <br></br>
         </>
       )}
     </form>
   );
 }
-
 
 export default Form;

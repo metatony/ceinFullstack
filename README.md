@@ -1,17 +1,11 @@
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
 
 <h2>
-CEIN Skincare 
+CEIN Skincare with Firebase
 </h2>
+
 This skincare website offers a range of highly effective body care products that combine natural ingredients. With a focus on vegan, natural, and skin-friendly formulations, the products are designed to provide nourishment and rejuvenation for the skin. From moisturizers to serums, the website provides a comprehensive selection of skincare solutions tailored to various skin types and concerns. Customers can discover products that prioritize both effectiveness and sustainability, promoting healthy and radiant skin.
+
+The website is hosted on vercel and i have used firebase for the backend <br/>
 
 ## How to run the file
 1. To initialize the repo you run ```npm install```
