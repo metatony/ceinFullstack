@@ -9,7 +9,7 @@ function Article() {
         <div className="m-5 sm:w-1/2 sm:m-5 sm:flex sm:justify-center">
           <img
             className="h-96 w-96"
-            src="src/assets/hero2.png"
+            src="./src/assets/hero2.png"
             alt="hero background"
           />
         </div>

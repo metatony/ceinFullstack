@@ -104,7 +104,7 @@ function Navbar({ user }) {
           {/* <!-- logo tag --> */}
           <div className="w-28 flex items-center justify-center">
             <li>
-              <img src="src/assets/Logo.png" alt="logo icon" />
+              <img src="https://ceinbucket.s3.eu-north-1.amazonaws.com/Logo.png" alt="logo icon" />
             </li>
           </div>
 

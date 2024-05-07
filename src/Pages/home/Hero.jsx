@@ -36,7 +36,7 @@ function Hero() {
         {/* <!-- image --> */}
         <img
           className="w-full h-64"
-          src="src/assets/hero_background.png"
+          src="https://ceinbucket.s3.eu-north-1.amazonaws.com/hero_background.png"
           alt="hero background"
         />
 

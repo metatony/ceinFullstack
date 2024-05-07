@@ -9,7 +9,7 @@ function Footer() {
           <div className="space-y-7">
             {/* <!-- logo --> */}
             <div>
-              <img src="src/assets/Logowhite.png" alt="logo" />
+              <img src="https://ceinbucket.s3.eu-north-1.amazonaws.com/Logowhite.png" alt="logo" />
             </div>
 
             {/* <!-- follow us --> */}
