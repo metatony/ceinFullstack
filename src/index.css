@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.HomeHero {
+  background-image: url("src/assets/bg_web.png");
+  background-size: cover;
+  height: 828px;
+}
+
+.Hero2 {
+  background-image: url("assets/Section 04.png");
+  background-size: cover;
+  height: 628px;
+}
+
+.col1 {
+  background-image: url("assets/about3.jpg");
+  background-size: cover;
+  height: 528px;
+}
+.col2 {
+  background-image: url("src/assets/about4.jpg");
+  background-size: cover;
+  height: 528px;
+}
+
+.productBanner {
+  background-image: url("assets/producthero.jpg");
+  background-size: cover;
+  height: 828px;
+}
+
+
+/* Hamburger menu styling */
+#mobile-menu {
+  transition: transform 0.3s ease-in-out;
+}
+
+#mobile-menu.show {
+  transform: translateX(0%);
+}
+
+#mobile-menu.hide {
+  transform: translateX(-100%);
+}
