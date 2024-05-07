@@ -19,9 +19,9 @@ function Footer() {
 
             {/* <!-- social media icons --> */}
             <div className="flex space-x-5 mb-">
-              <img src="src/assets/Social/twitter.png" alt="twitter logo" />
-              <img src="src/assets/Social/instagram.png" alt="instagram logo" />
-              <img src="src/assets/Social/facebook.png" alt="facebook logo" />
+              <img src="/assets/Social/twitter.png" alt="twitter logo" />
+              <img src="/assets/Social/instagram.png" alt="instagram logo" />
+              <img src="/assets/Social/facebook.png" alt="facebook logo" />
             </div>
           </div>
 
@@ -109,9 +109,9 @@ function Footer() {
           </div>
           {/* <!-- social media icons --> */}
           <div className="flex space-x-5 mb-">
-            <img src="src/assets/Social/twitter.png" alt="twitter logo" />
-            <img src="src/assets/Social/instagram.png" alt="instagram logo" />
-            <img src="src/assets/Social/facebook.png" alt="facebook logo" />
+            <img src="/assets/Social/twitter.png" alt="twitter logo" />
+            <img src="/assets/Social/instagram.png" alt="instagram logo" />
+            <img src="/assets/Social/facebook.png" alt="facebook logo" />
           </div>
 
           {/* <!-- footer texts --> */}

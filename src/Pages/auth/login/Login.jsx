@@ -36,7 +36,7 @@ function Login() {
           <div className="hidden md:w-2/5 md:block">
             <img
               className="h-[864px] w-full"
-              src="src/assets/login.jpg"
+              src="/assets/login.jpg"
               alt="serum"
             />
           </div>

@@ -34,7 +34,7 @@ function Banner() {
           <div className="">
             <img
               className="w-full"
-              src="assets/producthero.jpg"
+              src="/assets/producthero.jpg"
               alt=""
             />
           </div>

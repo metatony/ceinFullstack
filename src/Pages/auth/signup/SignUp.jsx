@@ -37,7 +37,7 @@ function SignUp() {
           <div className="hidden md:w-2/5 md:block">
             <img
               className="h-[864px] w-full"
-              src="src/assets/register.jpg"
+              src="/assets/register.jpg"
               alt="serum"
             />
           </div>
