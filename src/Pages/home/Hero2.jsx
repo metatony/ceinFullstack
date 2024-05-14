@@ -7,7 +7,11 @@ function Hero2() {
       <section>
         <div
           className="flex Hero2 flex-col items-center justify-center sm:px-20 lg:px-36"
-      
+          style={{
+            backgroundImage: "url('assets/hero3.png')",
+            backgroundSize: "cover",
+            height: "828px",
+          }}
         >
           {/* <!-- hero body section--> */}
           <div className="py-10 px-5 sm:px-0 text-white w-full flex flex-col text-left">

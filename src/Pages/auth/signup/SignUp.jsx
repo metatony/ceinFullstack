@@ -5,9 +5,7 @@ import { useEffect, useState } from "react";
 import { onAuthStateChanged } from "firebase/auth";
 import { auth } from "../../../Config/Config";
 
-
 function SignUp() {
-
   const [user, setUser] = useState(null);
 
   useEffect(() => {
@@ -27,7 +25,6 @@ function SignUp() {
     return () => unsubscribe();
   }, []);
 
-
   return (
     <div>
       <Navbar user={user} />
@@ -43,7 +40,7 @@ function SignUp() {
           </div>
 
           {/* Form section */}
-          
+
           <Form />
         </div>
       </section>

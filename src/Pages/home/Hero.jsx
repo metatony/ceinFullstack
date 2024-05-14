@@ -5,7 +5,14 @@ function Hero() {
   return (
     <div>
       {/* <!-- desktop view--> */}
-      <div className="hidden HomeHero px-5 bg-[#ddb3b3] py-10 text-white w-full sm:flex items-center sm:px-20 lg:px-36">
+      <div
+        className="hidden HomeHero px-5 bg-[#ddb3b3] py-10 text-white w-full sm:flex items-center sm:px-20 lg:px-36"
+        style={{
+      backgroundImage: "url('assets/bg_web.png')",
+      backgroundSize: 'cover',
+      height: '828px',
+        }}
+      >
         <div className="flex-col w-5/12 text-left space-y-5">
           <p className="font-extralight text-sm">
             Treat Your Body Like Your Face
@@ -19,13 +26,13 @@ function Hero() {
 
           {/* <!-- button tag --> */}
           <a href="productPage.html#products">
-            <Link to = "/products" >
-            <button className="flex items-center justify-center font-extralight text-sm bg-transparent border border-white px-2 py-4 w-48 transition-colors duration-300 ease-in-out hover:bg-[#3a3a3a] hover:text-white hover:border-none">
-              Discover More
-              <span className="ml-5">
-                <FaArrowRight />
-              </span>
-            </button>
+            <Link to="/products">
+              <button className="flex items-center justify-center font-extralight text-sm bg-transparent border border-white px-2 py-4 w-48 transition-colors duration-300 ease-in-out hover:bg-[#3a3a3a] hover:text-white hover:border-none">
+                Discover More
+                <span className="ml-5">
+                  <FaArrowRight />
+                </span>
+              </button>
             </Link>
           </a>
         </div>

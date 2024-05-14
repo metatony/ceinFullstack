@@ -37,7 +37,7 @@ function About() {
         <div className="sm:w-1/2 sm:m-5 sm:flex sm:justify-center">
           <img
             className="sm:h-80 sm:w-[400px] w-full"
-            src="https://ceinbucket.s3.eu-north-1.amazonaws.com/about1.jpg"
+            src="/assets/about1.jpg"
             alt="hero background"
           />
         </div>
@@ -76,7 +76,14 @@ function About() {
 
       <article>
         <div className="mt-14 flex flex-col sm:flex-row">
-          <div className="col1 flex flex-col items-center justify-center sm:w-1/2">
+          <div
+            className="col1 flex flex-col items-center justify-center sm:w-1/2"
+            style={{
+              backgroundImage: "url('assets/about3.jpg')",
+              backgroundSize: "cover",
+              height: "528px",
+            }}
+          >
             {/* <!-- hero body section--> */}
             <div className="py-10 px-5 sm:pl-16 text-white w-full flex flex-col">
               <div className="flex flex-col text-left space-y-5">
@@ -106,7 +113,14 @@ function About() {
           </div>
 
           {/* <!-- col 2 --> */}
-          <div className="col2 flex flex-col items-center justify-center sm:w-1/2">
+          <div
+            className="col2 flex flex-col items-center justify-center sm:w-1/2"
+            style={{
+              backgroundImage: "url('assets/about4.jpg')",
+              backgroundSize: "cover",
+              height: "528px",
+            }}
+          >
             {/* <!-- hero body section--> */}
             <div className="py-10 px-5 sm:pl-16 text-white w-full flex flex-col">
               <div className="flex flex-col text-left space-y-5">

@@ -1,47 +1,43 @@
 import { FaArrowRight } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 import { useState } from "react";
-import { auth} from "../../../Config/Config";
+import { auth } from "../../../Config/Config";
 import { useNavigate } from "react-router-dom";
 import { signInWithEmailAndPassword } from "firebase/auth";
 
-
 function Form() {
-
   const navigate = useNavigate();
 
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
 
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
-  
-  // auth result message 
-  const [errorMessage, setErrorMessage] = useState('');
-  
+  // auth result message
+  const [errorMessage, setErrorMessage] = useState("");
+
   const handleSubmit = async (e) => {
-    e.preventDefault()
-   
+    e.preventDefault();
+
     await signInWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {
-          // Signed in
-          const user = userCredential.user;
-          console.log(user);
-          navigate("/")
-          alert('Login successful !');
-          // ...
+        // Signed in
+        const user = userCredential.user;
+        console.log(user);
+        navigate("/");
+        alert("Login successful !");
+        // ...
       })
       .catch((error) => {
-          const errorCode = error.code;
-          //const errorMessage = error.message;
-          setErrorMessage(error.message)
-          console.log(errorCode, errorMessage);
-          // ..
+        const errorCode = error.code;
+        //const errorMessage = error.message;
+        setErrorMessage(error.message);
+        console.log(errorCode, errorMessage);
+        // ..
       });
-
-    }
+  };
 
   return (
     <form
-    onSubmit={handleSubmit}
+      onSubmit={handleSubmit}
       className="md:border-l flex flex-col px-5 space-y-8 mb-10 md:w-[60%] md:px-10 lg:px-48"
       action=""
     >
@@ -58,7 +54,7 @@ function Form() {
           name="email"
           placeholder="EMail"
           required
-          onChange={(e)=>setEmail(e.target.value)}
+          onChange={(e) => setEmail(e.target.value)}
           value={email}
         />
       </div>
@@ -72,7 +68,7 @@ function Form() {
           name="password"
           placeholder="Password"
           required
-          onChange={(e)=>setPassword(e.target.value)}
+          onChange={(e) => setPassword(e.target.value)}
           value={password}
         />
       </div>
@@ -101,7 +97,7 @@ function Form() {
       </div>
 
       {/* <!-- create account --> */}
-      <p className="flex items-center text-xs font-semibold px-5 text-orange-600  ">
+      <p className="flex items-center text-xs font-semibold px-5 text-blue-400">
         <Link to="/SignUp">Create account</Link>
         <span>
           <FaArrowRight className="ml-3 " />
@@ -110,7 +106,9 @@ function Form() {
 
       {errorMessage && (
         <>
-          <div className="text-center text-orange-600 text-xs">{errorMessage}</div>
+          <div className="text-center text-orange-600 text-xs">
+            {errorMessage}
+          </div>
           <br></br>
         </>
       )}

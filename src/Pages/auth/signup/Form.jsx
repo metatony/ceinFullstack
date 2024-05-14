@@ -107,7 +107,7 @@ function Form() {
       </div>
 
       {/* <!-- create account --> */}
-      <p className="flex items-center text-xs font-semibold px-5 ">
+      <p className="flex items-center text-xs font-semibold px-5 text-blue-400  ">
         <Link to="Login">Login </Link>
         <span className="ml-3">
           <FaArrowRight />
