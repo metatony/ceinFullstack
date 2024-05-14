@@ -55,7 +55,7 @@ function Footer() {
         <div className="hidden md:flex items-center space-x-28 text-gray-400 pl-20 pb-20 text-xs">
           {/* <!-- footer texts --> */}
           <p className="font-extralight">
-            Anthony &copy; D1 Assessment All rights reserved 2024.
+            Made with <span style={{ color: "red" }}>&#10084; </span> by metony
           </p>
 
           <div className="font-extralight space-x-5 flex">
