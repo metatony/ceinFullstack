@@ -124,7 +124,7 @@ function Footer() {
           </div>
 
           <p className="text-xs font-extralight">
-            Anthony &copy; D1 Assessment All rights reserved 2024.
+          Made with <span style={{ color: "red" }}>&#10084; </span> by metony
           </p>
         </div>
       </footer>
