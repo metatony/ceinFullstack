@@ -55,7 +55,7 @@ function Footer() {
         <div className="hidden md:flex items-center space-x-28 text-gray-400 pl-20 pb-20 text-xs">
           {/* <!-- footer texts --> */}
           <p className="font-extralight">
-            Made with <span style={{ color: "red" }}>&#10084; </span> by metony
+            Made with <span style={{ color: "red" }}>&#10084; </span> by metatony
           </p>
 
           <div className="font-extralight space-x-5 flex">
@@ -124,7 +124,7 @@ function Footer() {
           </div>
 
           <p className="text-xs font-extralight">
-          Made with <span style={{ color: "red" }}>&#10084; </span> by metony
+          Made with <span style={{ color: "red" }}>&#10084; </span> by metatony
           </p>
         </div>
       </footer>
