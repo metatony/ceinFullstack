@@ -1,6 +1,7 @@
 // import ProductCard from "../products/ProductCard";
 
 import ProductList from "../products/ProductList";
+import { Link } from "react-router-dom";
 
 function Slideshow() {
   return (
@@ -31,14 +32,18 @@ function Slideshow() {
 
         <div className="px-5 sm:pl-20">
           <a href="productPage.html">
-            <p className="flex items-center text-sm font-extralight my-10">
+            <Link to='/Products' className="flex items-center text-sm font-extralight my-10">
               All Products
               <span className="ml-5">
                 <i className="fa-solid fa-arrow-right"></i>
               </span>
-            </p>
+            </Link>
           </a>
         </div>
+
+        
+
+        
 
         {/* <!-- product items end --> */}
       </section>
