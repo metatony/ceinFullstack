@@ -12,7 +12,7 @@ function ProductList({ maxItems }) {
   const navigate = useNavigate();
 
   const fetchPost = async () => {
-    await getDocs(collection(fs, "cein database")).then((querySnapshot) => {
+    await getDocs(collection(fs, "cein 2 database")).then((querySnapshot) => {
       const newData = querySnapshot.docs.map((doc) => ({
         ...doc.data(),
 

@@ -8,14 +8,14 @@ import { getStorage } from "firebase/storage";
 
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-    apiKey: "AIzaSyBJ_X1YpYdqGs6J9CqpAnycTY36UB0Sg_0",
-    authDomain: "cein-68593.firebaseapp.com",
-    projectId: "cein-68593",
-    storageBucket: "cein-68593.appspot.com",
-    messagingSenderId: "456867055450",
-    appId: "1:456867055450:web:b1463ae7e054997d89d563",
-    measurementId: "G-3WX6H3L07D"
-  };
+  apiKey: "AIzaSyDPTukPt6DX1XVlRWpGMteEUJd4su_-HQc",
+  authDomain: "cein-2.firebaseapp.com",
+  projectId: "cein-2",
+  storageBucket: "cein-2.appspot.com",
+  messagingSenderId: "846502656779",
+  appId: "1:846502656779:web:9d28ee2fdf05b53817800e",
+  measurementId: "G-09CS6K25CY"
+};
 
 const app = firebase.initializeApp(firebaseConfig);
 
