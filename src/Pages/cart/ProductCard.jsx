@@ -85,7 +85,7 @@ function ProductCard({ cartProducts, updateCartProducts }) {
           <div className="font-extralight space-y-2">
             <p className="text-sm sm:text-base font-normal w-32">{cartProducts.name}</p>
             <p className="text-xs">{cartProducts.size}</p>
-            <p className="text-xs">{cartProducts.price}</p>
+            <p className="text-xs">£ {cartProducts.price}</p>
           </div>
         </div>
 
